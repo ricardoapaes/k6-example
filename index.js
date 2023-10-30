@@ -9,7 +9,7 @@ export const host = __ENV.HOST != null ? __ENV.HOST : "crn1.com.br";
 
 export const options = {
   vus: 100,
-  duration: '10s',
+  duration: '60s',
   thresholds: {
     http_req_duration: ['p(95)<200', 'p(90)<150', 'avg<120', 'max<1000'],
     http_reqs: ['count>8000'],
