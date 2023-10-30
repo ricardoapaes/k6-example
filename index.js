@@ -8,8 +8,8 @@ export const protocol = __ENV.PROTOCOL != null ? __ENV.PROTOCOL : "https";
 export const host = __ENV.HOST != null ? __ENV.HOST : "crn1.com.br";
 
 export const options = {
-  vus: 100,
-  duration: '60s',
+  vus: 500,
+  duration: '120s',
   thresholds: {
     http_req_duration: ['p(95)<200', 'p(90)<150', 'avg<120', 'max<1000'],
     http_reqs: ['count>8000'],
