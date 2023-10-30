@@ -8,8 +8,8 @@ Para rodar o script de exemplo usar o seguinte comando:
 docker run --rm \
     -v ${PWD}:/k6/ \
     -w /k6/ \
-    -e PROTOCOL=https
-    -e HOST=crn1.com.br
+    -e PROTOCOL=https \
+    -e HOST=crn1.com.br \
     grafana/k6:latest \
     run index.js
 ```
